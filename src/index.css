@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .input,
+    .select,
+    .toggle ,.tab,.tabs-boxed{
+        @apply bg-white
+    }
+
+    .btn-accent,.btn {
+        @apply text-white
+    }
+
+    #root {
+        @apply bg-[#f2f2f2] text-black
+    }
+  .table tr.active,
+.table tr.active:nth-child(even),
+.table-zebra tbody tr:nth-child(even){
+    @apply bg-primary
+  }
+  .table-zebra{
+    @apply bg-white
+  }
+  .btn-outline{
+    @apply border-black text-black
+  }
+}
